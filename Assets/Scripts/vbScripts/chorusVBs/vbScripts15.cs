@@ -37,7 +37,7 @@ public class vbScripts15 : MonoBehaviour, IVirtualButtonEventHandler  {
 		{
 			slider.transform.Translate (0f, 0f, .1f);
 
-			arCam.GetComponent<AudioChorusFilter> ().depth += 2f;
+			arCam.GetComponent<AudioChorusFilter> ().depth += .143f;
 		}
 	}
 

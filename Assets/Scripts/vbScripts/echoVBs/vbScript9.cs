@@ -36,8 +36,9 @@ public class vbScript9 : MonoBehaviour, IVirtualButtonEventHandler  {
 		{
 			slider.transform.Translate (0f, 0f, .1f);
 
-			arCam.GetComponent<AudioEchoFilter> ().delay += 200f;
+			arCam.GetComponent<AudioEchoFilter> ().delay += 300f;
 		}
+			
 	}
 
 	public void OnButtonReleased (VirtualButtonAbstractBehaviour vb) 

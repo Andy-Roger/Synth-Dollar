@@ -41,6 +41,20 @@ public class vbScript11 : MonoBehaviour, IVirtualButtonEventHandler  {
 		}
 	}
 
+	void Update ()
+	{
+		if (slider.transform.position.z >=  -.6f) 
+
+		{
+			arCam.GetComponent<AudioReverbFilter>  ().enabled = true;
+		}
+		if (slider.transform.position.z <= -.6f) 
+
+		{
+			arCam.GetComponent<AudioReverbFilter>  ().enabled = false;
+		}
+	}
+
 	public void OnButtonReleased (VirtualButtonAbstractBehaviour vb) 
 
 	{

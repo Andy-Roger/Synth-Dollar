@@ -44,9 +44,13 @@ public class echoToggle : MonoBehaviour, IVirtualButtonEventHandler  {
 
 			arCam.GetComponent<AudioEchoFilter> ().decayRatio = 1f;
 
-			loopOn.transform.localScale += new Vector3(0f,0.7681009f,0f);
+			loopOn.GetComponent<TextMesh> ().fontSize = 75;
 
-			loopOff.transform.localScale -= new Vector3(0f,0.7681009f,0f);
+			loopOff.GetComponent<TextMesh> ().fontSize = 0;
+
+			loopOn.transform.localScale += new Vector3(0.05f,0.12f,0f);
+
+			loopOff.transform.localScale -= new Vector3(0.05f,0.12f,0f);
 		}
 
 		else
@@ -55,9 +59,13 @@ public class echoToggle : MonoBehaviour, IVirtualButtonEventHandler  {
 
 			arCam.GetComponent<AudioEchoFilter> ().decayRatio = .2f;
 
-			loopOn.transform.localScale -= new Vector3(0f,0.7681009f,0f);
+			loopOn.GetComponent<TextMesh> ().fontSize = 0;
 
-			loopOff.transform.localScale += new Vector3(0f,0.7681009f,0f);
+			loopOff.GetComponent<TextMesh> ().fontSize = 75;
+
+			loopOn.transform.localScale -= new Vector3(0.05f,0.12f,0f);
+
+			loopOff.transform.localScale += new Vector3(0.05f,0.12f,0f);
 		}
 
 	}
